@@ -1,0 +1,54 @@
+{
+ "kind": "logreg",
+ "description": "Regressione logistica elastic-net/L1: lineare e sparsa.",
+ "why": "Azzera i pesi dei segnali inutili: dice quali delle 35 domande servono davvero (utile per sfoltire le domande e ridurre i tempi di estrazione) con la stessa robustezza della L2.",
+ "_note": "Griglie ordinate dal modello piu' semplice al piu' complesso: a parita' di AUC in CV vince il primo. video_grid = classificatore di video (c'e' uno scarico?), window_grid = modello a finestre (quando?).",
+ "video_grid": [
+  {
+   "C": 0.03,
+   "l1_ratio": 1.0
+  },
+  {
+   "C": 0.03,
+   "l1_ratio": 0.5
+  },
+  {
+   "C": 0.1,
+   "l1_ratio": 1.0
+  },
+  {
+   "C": 0.1,
+   "l1_ratio": 0.5
+  },
+  {
+   "C": 0.3,
+   "l1_ratio": 1.0
+  },
+  {
+   "C": 0.3,
+   "l1_ratio": 0.5
+  },
+  {
+   "C": 1.0,
+   "l1_ratio": 1.0
+  },
+  {
+   "C": 1.0,
+   "l1_ratio": 0.5
+  }
+ ],
+ "window_grid": [
+  {
+   "C": 0.03,
+   "l1_ratio": 1.0
+  },
+  {
+   "C": 0.1,
+   "l1_ratio": 1.0
+  },
+  {
+   "C": 0.3,
+   "l1_ratio": 1.0
+  }
+ ]
+}

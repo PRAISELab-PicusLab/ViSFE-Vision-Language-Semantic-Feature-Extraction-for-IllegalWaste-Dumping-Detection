@@ -1,0 +1,5 @@
+# gli script per il cluster devono avere SEMPRE fine riga Unix (con CRLF su Linux non partono)
+*.sh text eol=lf
+*.slurm text eol=lf
+*.py text eol=lf
+*.json text eol=lf

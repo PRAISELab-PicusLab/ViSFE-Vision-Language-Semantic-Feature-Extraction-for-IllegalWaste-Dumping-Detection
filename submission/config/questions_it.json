@@ -1,0 +1,116 @@
+{
+  "_nota": "Traduzioni italiane: SOLO documentazione (QUESTIONS.md, test). Non vengono mai date a Visual-JEV.",
+  "questions": {
+    "carry_waste": {
+      "it": "Una persona sta trasportando un rifiuto?"
+    },
+    "waste_put_down": {
+      "it": "Un rifiuto viene appoggiato a terra?"
+    },
+    "waste_untouched": {
+      "it": "C'è un rifiuto a terra che nessuno sta toccando?"
+    },
+    "open_bag": {
+      "it": "Una persona tiene un sacco aperto e ci mette dentro degli oggetti?"
+    },
+    "gloves": {
+      "it": "Una persona indossa guanti per raccogliere rifiuti?"
+    },
+    "trunk_open": {
+      "it": "Un veicolo è fermo con baule, portellone o portiera aperti?"
+    },
+    "air_object": {
+      "it": "Un oggetto è in aria o sta cadendo vicino a un veicolo o a una persona?"
+    },
+    "vehicle_by_pile": {
+      "it": "Un veicolo è fermo accanto a un mucchio di sacchi di rifiuti?"
+    },
+    "pile_on_ground": {
+      "it": "C'è un mucchio di sacchi o rifiuti a terra?"
+    },
+    "waste_by_bin": {
+      "it": "Un rifiuto viene appoggiato a terra accanto a un bidone o cassonetto?"
+    },
+    "waste_into_bin": {
+      "it": "Una persona mette un rifiuto dentro un bidone o cassonetto?"
+    },
+    "bulky_moving": {
+      "it": "Una persona trasporta o sposta un oggetto ingombrante (materasso, mobile, elettrodomestico)?"
+    },
+    "walking_away": {
+      "it": "Una persona si allontana da un oggetto che resta a terra?"
+    },
+    "vehicle_trips": {
+      "it": "Una persona fa più viaggi fra un veicolo e un mucchio di oggetti?"
+    },
+    "only_passing": {
+      "it": "Passano solo persone o veicoli, senza che nessun oggetto venga maneggiato?"
+    },
+    "c_put_leave": {
+      "it": "Una persona appoggia una borsa o un oggetto a terra e si allontana."
+    },
+    "c_throw_vehicle": {
+      "it": "Una persona lancia o lascia cadere un oggetto da un veicolo."
+    },
+    "c_unload": {
+      "it": "Una persona scarica oggetti da un veicolo e li lascia a terra."
+    },
+    "c_collect": {
+      "it": "Alcune persone raccolgono rifiuti da terra e li mettono in un sacco."
+    },
+    "c_drop_walking": {
+      "it": "Una persona lascia cadere o getta un oggetto mentre cammina."
+    },
+    "c_waste_in_bin": {
+      "it": "Una persona mette dei rifiuti dentro un bidone o un cassonetto."
+    },
+    "c_pickup_carry": {
+      "it": "Una persona raccoglie un oggetto da terra e lo porta via."
+    },
+    "c_leave_bulky": {
+      "it": "Una persona lascia un oggetto ingombrante sul marciapiede."
+    },
+    "scene_summary": {
+      "it": "Quale affermazione descrive meglio cosa succede agli oggetti nella scena?",
+      "options_it": [
+        "Una persona lascia oggetti a terra e si allontana",
+        "Una persona lancia o scarica oggetti da un veicolo",
+        "Alcune persone raccolgono rifiuti o oggetti",
+        "Non viene lasciato, lanciato né raccolto nulla"
+      ]
+    },
+    "garbage_truck": {
+      "it": "C'è un camion della raccolta rifiuti, o un operatore che svuota un bidone in un camion?"
+    },
+    "hands_on_object": {
+      "it": "Una persona tocca o maneggia un oggetto con le mani?"
+    },
+    "person_visible": {
+      "it": "C'è almeno una persona visibile nei frame?"
+    },
+    "near_waste_idle": {
+      "it": "Una persona è vicina ai rifiuti senza toccarli?"
+    },
+    "hold_first": {
+      "it": "Nei primi frame (riga in alto) una persona tiene in mano una borsa o un oggetto?"
+    },
+    "hold_last": {
+      "it": "Negli ultimi frame (riga in basso) una persona tiene in mano una borsa o un oggetto?"
+    },
+    "ground_first": {
+      "it": "Nei primi frame (riga in alto) c'è una borsa o un oggetto a terra?"
+    },
+    "ground_last": {
+      "it": "Negli ultimi frame (riga in basso) c'è una borsa o un oggetto a terra che nessuno sta toccando?"
+    },
+    "heavy_material": {
+      "it": "Una persona scarica o trasporta pneumatici, macerie o materiale edile?"
+    },
+    "small_fall": {
+      "it": "Un piccolo oggetto cade a terra da una persona o da un veicolo?"
+    },
+    "arm_out_vehicle": {
+      "it": "Una mano o un braccio escono dal finestrino o dalla portiera di un veicolo?"
+    }
+  }
+}

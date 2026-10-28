@@ -1,0 +1,76 @@
+{
+ "kind": "mlp",
+ "description": "Rete neurale piccola (multilayer perceptron) con regolarizzazione L2 (alpha).",
+ "why": "Combina le domande in modo non lineare e morbido (a differenza delle soglie degli alberi); tenuta piccola e regolarizzata per i pochi dati.",
+ "_note": "Griglie ordinate dal modello piu' semplice al piu' complesso: a parita' di AUC in CV vince il primo. video_grid = classificatore di video (c'e' uno scarico?), window_grid = modello a finestre (quando?).",
+ "video_grid": [
+  {
+   "hidden": [
+    16
+   ],
+   "alpha": 1.0,
+   "solver": "lbfgs",
+   "max_iter": 2000
+  },
+  {
+   "hidden": [
+    16
+   ],
+   "alpha": 0.1,
+   "solver": "lbfgs",
+   "max_iter": 2000
+  },
+  {
+   "hidden": [
+    32
+   ],
+   "alpha": 1.0,
+   "solver": "lbfgs",
+   "max_iter": 2000
+  },
+  {
+   "hidden": [
+    32
+   ],
+   "alpha": 0.1,
+   "solver": "lbfgs",
+   "max_iter": 2000
+  },
+  {
+   "hidden": [
+    64,
+    32
+   ],
+   "alpha": 0.1,
+   "solver": "lbfgs",
+   "max_iter": 2000
+  }
+ ],
+ "window_grid": [
+  {
+   "hidden": [
+    32
+   ],
+   "alpha": 0.1,
+   "solver": "adam",
+   "max_iter": 500
+  },
+  {
+   "hidden": [
+    32
+   ],
+   "alpha": 0.01,
+   "solver": "adam",
+   "max_iter": 500
+  },
+  {
+   "hidden": [
+    64,
+    32
+   ],
+   "alpha": 0.01,
+   "solver": "adam",
+   "max_iter": 500
+  }
+ ]
+}

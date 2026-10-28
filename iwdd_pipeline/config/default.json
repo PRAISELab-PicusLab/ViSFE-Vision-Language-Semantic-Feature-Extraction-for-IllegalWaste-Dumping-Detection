@@ -1,0 +1,16 @@
+{
+  "events": {"fps": 4, "jpeg_quality": 95, "fill_gaps_s": 2.0},
+  "jev": {"max_pixels": 1003520, "chunk": 8, "context_mode": "rows"},
+  "scan": {"sample_every_s": 0.5, "sig_size": [32, 18], "small_width": 160, "group_sim": 0.95},
+  "clip_logit": 8.0,
+  "clip_derived": 16.0,
+  "exclude_from_training": ["vid0481", "vid0185"],
+  "cv": {"n_splits": 5, "repeats": 3, "seed": 0},
+  "video_model": {
+    "feature_sets": ["base", "derived"],
+    "aggs_options": [["max"], ["max", "mean"], ["max", "mean", "top3", "frac"]],
+    "C_grid": [0.003, 0.01, 0.03, 0.1, 0.3, 1.0]
+  },
+  "window_model": {"C_grid": [0.03, 0.1, 0.3], "deltas": [-2, -1, 0, 1, 2, 3, 4], "time_col": "t_end"},
+  "bootstrap": 1000
+}

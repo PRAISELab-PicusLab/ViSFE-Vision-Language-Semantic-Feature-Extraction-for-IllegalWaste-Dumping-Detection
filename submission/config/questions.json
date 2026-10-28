@@ -1,0 +1,313 @@
+{
+  "_note": "LOCKED question set (35). Everything in this file is ENGLISH and is exactly what Visual-JEV receives ('en' / 'options_en'). Italian translations live in questions_it.json and are documentation only. Changing an id or a text invalidates already extracted features (the cache is keyed by id): use a new --run.",
+  "claim_options": [
+    "supported",
+    "contradicted",
+    "not determined"
+  ],
+  "questions": [
+    {
+      "id": "carry_waste",
+      "kind": "yesno",
+      "group": "stato",
+      "origin": "utente",
+      "en": "Is a person carrying a piece of waste?"
+    },
+    {
+      "id": "waste_put_down",
+      "kind": "yesno",
+      "group": "azione",
+      "origin": "utente",
+      "en": "Is a piece of waste being put down on the ground?"
+    },
+    {
+      "id": "waste_untouched",
+      "kind": "yesno",
+      "group": "stato",
+      "origin": "utente",
+      "en": "Is there a piece of waste on the ground that nobody is touching?"
+    },
+    {
+      "id": "open_bag",
+      "kind": "yesno",
+      "group": "raccolta",
+      "origin": "utente",
+      "en": "Is a person holding an open bag and putting items into it?"
+    },
+    {
+      "id": "gloves",
+      "kind": "yesno",
+      "group": "raccolta",
+      "origin": "utente",
+      "en": "Is a person wearing gloves for picking up waste?"
+    },
+    {
+      "id": "trunk_open",
+      "kind": "yesno",
+      "group": "veicolo",
+      "origin": "utente",
+      "en": "Is a vehicle stopped with its trunk, tailgate or door open?"
+    },
+    {
+      "id": "air_object",
+      "kind": "yesno",
+      "group": "lancio",
+      "origin": "utente",
+      "en": "Is an object in the air or falling close to a vehicle or a person?"
+    },
+    {
+      "id": "vehicle_by_pile",
+      "kind": "yesno",
+      "group": "veicolo",
+      "origin": "utente",
+      "en": "Is a vehicle stopped next to a pile of waste bags?"
+    },
+    {
+      "id": "pile_on_ground",
+      "kind": "yesno",
+      "group": "stato",
+      "origin": "utente",
+      "en": "Is there a pile of bags or waste on the ground?"
+    },
+    {
+      "id": "waste_by_bin",
+      "kind": "yesno",
+      "group": "bidone",
+      "origin": "utente",
+      "en": "Is a piece of waste being put on the ground next to a bin or dumpster?"
+    },
+    {
+      "id": "waste_into_bin",
+      "kind": "yesno",
+      "group": "bidone",
+      "origin": "utente",
+      "en": "Is a person putting a piece of waste inside a bin or dumpster?"
+    },
+    {
+      "id": "bulky_moving",
+      "kind": "yesno",
+      "group": "ingombranti",
+      "origin": "utente",
+      "en": "Is a person carrying or moving a bulky object (mattress, furniture, appliance)?"
+    },
+    {
+      "id": "walking_away",
+      "kind": "yesno",
+      "group": "azione",
+      "origin": "utente",
+      "en": "Is a person walking away from an object that stays on the ground?"
+    },
+    {
+      "id": "vehicle_trips",
+      "kind": "yesno",
+      "group": "veicolo",
+      "origin": "utente",
+      "en": "Is a person making several trips between a vehicle and a pile of objects?"
+    },
+    {
+      "id": "only_passing",
+      "kind": "yesno",
+      "group": "negativi",
+      "origin": "utente",
+      "en": "Are there only people or vehicles passing, with no object being handled?"
+    },
+    {
+      "id": "c_put_leave",
+      "kind": "claim",
+      "group": "affermazione",
+      "origin": "utente",
+      "feature_options": [
+        0
+      ],
+      "en": "A person puts a bag or an object on the ground and walks away from it."
+    },
+    {
+      "id": "c_throw_vehicle",
+      "kind": "claim",
+      "group": "affermazione",
+      "origin": "utente",
+      "feature_options": [
+        0
+      ],
+      "en": "A person throws or drops an object from a vehicle."
+    },
+    {
+      "id": "c_unload",
+      "kind": "claim",
+      "group": "affermazione",
+      "origin": "utente",
+      "feature_options": [
+        0
+      ],
+      "en": "A person unloads objects from a vehicle and leaves them on the ground."
+    },
+    {
+      "id": "c_collect",
+      "kind": "claim",
+      "group": "affermazione",
+      "origin": "utente",
+      "feature_options": [
+        0
+      ],
+      "en": "People are picking up litter from the ground and putting it into a bag."
+    },
+    {
+      "id": "c_drop_walking",
+      "kind": "claim",
+      "group": "affermazione",
+      "origin": "utente",
+      "feature_options": [
+        0
+      ],
+      "en": "A person drops or tosses an object while walking."
+    },
+    {
+      "id": "c_waste_in_bin",
+      "kind": "claim",
+      "group": "affermazione",
+      "origin": "utente",
+      "feature_options": [
+        0
+      ],
+      "en": "A person puts waste inside a bin or dumpster."
+    },
+    {
+      "id": "c_pickup_carry",
+      "kind": "claim",
+      "group": "affermazione",
+      "origin": "utente",
+      "feature_options": [
+        0
+      ],
+      "en": "A person picks up an object from the ground and carries it away."
+    },
+    {
+      "id": "c_leave_bulky",
+      "kind": "claim",
+      "group": "affermazione",
+      "origin": "utente",
+      "feature_options": [
+        0
+      ],
+      "en": "A person leaves a bulky item on the pavement."
+    },
+    {
+      "id": "scene_summary",
+      "kind": "multi",
+      "group": "scena",
+      "origin": "utente",
+      "feature_options": [
+        0,
+        1,
+        2
+      ],
+      "en": "Which statement best describes what happens with the objects in the scene?",
+      "options_en": [
+        "A person leaves objects on the ground and walks away",
+        "A person throws or unloads objects from a vehicle",
+        "People pick up litter or collect objects",
+        "Nothing is being left, thrown or collected"
+      ]
+    },
+    {
+      "id": "garbage_truck",
+      "kind": "yesno",
+      "group": "negativi",
+      "origin": "suggerita",
+      "en": "Is there a garbage collection truck, or a worker emptying a bin into a truck?"
+    },
+    {
+      "id": "hands_on_object",
+      "kind": "yesno",
+      "group": "negativi",
+      "origin": "suggerita",
+      "en": "Is a person touching or handling an object with their hands?"
+    },
+    {
+      "id": "person_visible",
+      "kind": "yesno",
+      "group": "negativi",
+      "origin": "suggerita",
+      "en": "Is at least one person visible in the frames?"
+    },
+    {
+      "id": "near_waste_idle",
+      "kind": "yesno",
+      "group": "negativi",
+      "origin": "suggerita",
+      "en": "Is a person standing close to waste without touching it?"
+    },
+    {
+      "id": "hold_first",
+      "kind": "yesno",
+      "group": "direzione",
+      "origin": "suggerita",
+      "en": "In the first frames (top row), is a person holding a bag or an object?"
+    },
+    {
+      "id": "hold_last",
+      "kind": "yesno",
+      "group": "direzione",
+      "origin": "suggerita",
+      "en": "In the last frames (bottom row), is a person holding a bag or an object?"
+    },
+    {
+      "id": "ground_first",
+      "kind": "yesno",
+      "group": "direzione",
+      "origin": "suggerita",
+      "en": "In the first frames (top row), is there a bag or an object on the ground?"
+    },
+    {
+      "id": "ground_last",
+      "kind": "yesno",
+      "group": "direzione",
+      "origin": "suggerita",
+      "en": "In the last frames (bottom row), is there a bag or an object on the ground with nobody touching it?"
+    },
+    {
+      "id": "heavy_material",
+      "kind": "yesno",
+      "group": "ingombranti",
+      "origin": "suggerita",
+      "en": "Is a person unloading or carrying tires, rubble or construction material?"
+    },
+    {
+      "id": "small_fall",
+      "kind": "yesno",
+      "group": "lancio",
+      "origin": "suggerita",
+      "en": "Does a small object fall from a person or a vehicle to the ground?"
+    },
+    {
+      "id": "arm_out_vehicle",
+      "kind": "yesno",
+      "group": "lancio",
+      "origin": "suggerita",
+      "en": "Is a hand or an arm extended out of a vehicle window or door?"
+    }
+  ],
+  "derived_features": {
+    "_note": "Per-grid combinations of the four direction questions (logit level). dep_state>0: holding at the start and on the ground at the end (deposit); pick_state = -dep_state (pick-up).",
+    "dep_state": {
+      "plus": [
+        "hold_first",
+        "ground_last"
+      ],
+      "minus": [
+        "hold_last",
+        "ground_first"
+      ]
+    },
+    "pick_state": {
+      "plus": [
+        "hold_last",
+        "ground_first"
+      ],
+      "minus": [
+        "hold_first",
+        "ground_last"
+      ]
+    }
+  }
+}

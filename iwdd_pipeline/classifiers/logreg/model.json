@@ -1,0 +1,37 @@
+{
+ "kind": "logreg",
+ "description": "Regressione logistica L2: il modello originale della pipeline, riferimento per il confronto.",
+ "why": "Lineare e ben regolarizzato: con ~400 video di train e' difficile da battere; i pesi si leggono come importanza delle domande.",
+ "_note": "Griglie ordinate dal modello piu' semplice al piu' complesso: a parita' di AUC in CV vince il primo. video_grid = classificatore di video (c'e' uno scarico?), window_grid = modello a finestre (quando?).",
+ "video_grid": [
+  {
+   "C": 0.003
+  },
+  {
+   "C": 0.01
+  },
+  {
+   "C": 0.03
+  },
+  {
+   "C": 0.1
+  },
+  {
+   "C": 0.3
+  },
+  {
+   "C": 1.0
+  }
+ ],
+ "window_grid": [
+  {
+   "C": 0.03
+  },
+  {
+   "C": 0.1
+  },
+  {
+   "C": 0.3
+  }
+ ]
+}

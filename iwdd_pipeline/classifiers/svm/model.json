@@ -1,0 +1,50 @@
+{
+ "kind": "svm",
+ "description": "Support Vector Machine, kernel lineare e RBF (punteggio = sigmoide della funzione di decisione).",
+ "why": "Il kernel RBF cattura interazioni non lineari fra domande con pochi dati; il lineare fa da controllo.",
+ "_note": "Griglie ordinate dal modello piu' semplice al piu' complesso: a parita' di AUC in CV vince il primo. video_grid = classificatore di video (c'e' uno scarico?), window_grid = modello a finestre (quando?).",
+ "video_grid": [
+  {
+   "kernel": "linear",
+   "C": 0.01
+  },
+  {
+   "kernel": "linear",
+   "C": 0.1
+  },
+  {
+   "kernel": "linear",
+   "C": 1.0
+  },
+  {
+   "kernel": "rbf",
+   "C": 0.3
+  },
+  {
+   "kernel": "rbf",
+   "C": 1.0
+  },
+  {
+   "kernel": "rbf",
+   "C": 3.0
+  },
+  {
+   "kernel": "rbf",
+   "C": 10.0
+  }
+ ],
+ "window_grid": [
+  {
+   "kernel": "rbf",
+   "C": 0.3
+  },
+  {
+   "kernel": "rbf",
+   "C": 1.0
+  },
+  {
+   "kernel": "rbf",
+   "C": 3.0
+  }
+ ]
+}

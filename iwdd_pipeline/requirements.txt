@@ -1,0 +1,21 @@
+# Dipendenze della pipeline IWDD. Le versioni sono quelle del notebook Colab (blocco PINS) e dell'ambiente locale che funziona.
+# torch/torchvision NON stanno qui: si installano a parte dall'indice PyTorch giusto per la CUDA (vedi slurm/00_setup_env.sh).
+numpy==2.2.6
+transformers==5.17.0
+peft==0.21.0
+accelerate==1.15.0
+safetensors==0.8.0
+tokenizers==0.23.2
+huggingface_hub==1.32.0
+pillow==12.3.0
+bitsandbytes==0.50.2
+opencv-python-headless==4.13.0.92
+
+# analisi e modelli (versioni verificate localmente)
+pandas==3.0.3
+scikit-learn==1.9.0
+pyarrow
+scipy
+matplotlib
+joblib
+tqdm

@@ -1,0 +1,13 @@
+# risultati e cache locali (grandi, riproducibili)
+runs/
+__pycache__/
+*.pyc
+*.log
+.venv/
+venv/
+# uscite e log dei classificatori (le specifiche model.json invece si versionano)
+classifiers/*/runs/
+classifiers/*/logs/
+classifiers/comparison/
+classifiers/combinations/
+slurm/logs/

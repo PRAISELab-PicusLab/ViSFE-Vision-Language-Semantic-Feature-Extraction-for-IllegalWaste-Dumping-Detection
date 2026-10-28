@@ -1,0 +1,12 @@
+# Dependencies installed by test.ipynb on top of the Google Colab runtime (torch, torchvision, opencv-python, scipy, matplotlib, pandas, tqdm
+# and pillow come with Colab; torch is NOT pinned here on purpose: the Colab build is used as is).
+# These pins are the versions the method was validated with.
+numpy==2.2.6
+transformers==5.17.0
+peft==0.21.0
+accelerate==1.15.0
+safetensors==0.8.0
+tokenizers==0.23.2
+huggingface_hub==1.32.0
+pillow==12.3.0
+bitsandbytes==0.50.2

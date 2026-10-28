@@ -1,0 +1,48 @@
+{
+ "kind": "hist_gb",
+ "description": "Gradient boosting su istogrammi (HistGradientBoostingClassifier di scikit-learn, simile a LightGBM).",
+ "why": "Di solito il modello piu' forte su dati tabellari: alberi poco profondi in sequenza, ognuno corregge gli errori dei precedenti.",
+ "_note": "Griglie ordinate dal modello piu' semplice al piu' complesso: a parita' di AUC in CV vince il primo. video_grid = classificatore di video (c'e' uno scarico?), window_grid = modello a finestre (quando?).",
+ "video_grid": [
+  {
+   "learning_rate": 0.05,
+   "max_iter": 100,
+   "max_depth": 2,
+   "min_samples_leaf": 10
+  },
+  {
+   "learning_rate": 0.05,
+   "max_iter": 200,
+   "max_depth": 2,
+   "min_samples_leaf": 10
+  },
+  {
+   "learning_rate": 0.05,
+   "max_iter": 200,
+   "max_depth": 3,
+   "min_samples_leaf": 10
+  },
+  {
+   "learning_rate": 0.05,
+   "max_iter": 400,
+   "max_depth": 3,
+   "min_samples_leaf": 10,
+   "l2_regularization": 1.0
+  }
+ ],
+ "window_grid": [
+  {
+   "learning_rate": 0.05,
+   "max_iter": 200,
+   "max_depth": 3,
+   "min_samples_leaf": 20
+  },
+  {
+   "learning_rate": 0.05,
+   "max_iter": 400,
+   "max_depth": 4,
+   "min_samples_leaf": 20,
+   "l2_regularization": 1.0
+  }
+ ]
+}

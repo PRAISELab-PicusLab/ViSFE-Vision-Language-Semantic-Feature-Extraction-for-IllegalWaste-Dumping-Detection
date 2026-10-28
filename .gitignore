@@ -1,0 +1,35 @@
+# Ambiente Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Dataset e output generati dalla pipeline (grandi, non da versionare)
+dataset/
+frames/
+events_frames/
+compacted_frames/
+results/
+results_events_vlm/
+results_events/
+preprocessing_debug/
+vlm_contexts/
+
+# Repo esterna clonata dal notebook (visual-jev)
+visual-jev/
+
+# Cache modelli / pesi
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# File di sistema / editor
+.vscode/
+.idea/
+*.log
+Thumbs.db
+.DS_Store
+
+# Uscite della consegna
+submission_log.csv

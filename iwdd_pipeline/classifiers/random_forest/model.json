@@ -1,0 +1,55 @@
+{
+ "kind": "random_forest",
+ "description": "Random forest (500 alberi per i video, 300 per le griglie).",
+ "why": "Media molti alberi: non lineare, robusto al rumore e alle feature inutili, poca taratura.",
+ "_note": "Griglie ordinate dal modello piu' semplice al piu' complesso: a parita' di AUC in CV vince il primo. video_grid = classificatore di video (c'e' uno scarico?), window_grid = modello a finestre (quando?).",
+ "video_grid": [
+  {
+   "n_estimators": 500,
+   "min_samples_leaf": 5,
+   "max_features": "sqrt"
+  },
+  {
+   "n_estimators": 500,
+   "min_samples_leaf": 5,
+   "max_features": 0.3
+  },
+  {
+   "n_estimators": 500,
+   "min_samples_leaf": 2,
+   "max_features": "sqrt"
+  },
+  {
+   "n_estimators": 500,
+   "min_samples_leaf": 2,
+   "max_features": 0.3
+  },
+  {
+   "n_estimators": 500,
+   "min_samples_leaf": 1,
+   "max_features": "sqrt"
+  },
+  {
+   "n_estimators": 500,
+   "min_samples_leaf": 1,
+   "max_features": 0.3
+  }
+ ],
+ "window_grid": [
+  {
+   "n_estimators": 300,
+   "min_samples_leaf": 20,
+   "max_features": "sqrt"
+  },
+  {
+   "n_estimators": 300,
+   "min_samples_leaf": 10,
+   "max_features": "sqrt"
+  },
+  {
+   "n_estimators": 300,
+   "min_samples_leaf": 5,
+   "max_features": "sqrt"
+  }
+ ]
+}
